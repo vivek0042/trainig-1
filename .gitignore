@@ -4,6 +4,21 @@
 /node_modules
 /.pnp
 .pnp.js
+/README.md
+/public/favicon.icon   
+/public/logo192.png
+/public/logo512.png
+/public/robots.txt
+/src/App.css
+
+/src/App.test.js
+    
+/src/index.css
+/src/index.js
+/src/logo.svg      
+/src/reportWebVitals.js
+/src/setupTests.js
+/yarn.lock
 
 # testing
 /coverage
