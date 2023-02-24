@@ -1,17 +1,67 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import react,{Component} from 'react'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import ReactDOM, { render } from 'react-dom';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import Home  from '../src/pages/Home'
+
+import Counter from '../src/pages/Counter'
+
+import About from '../src/pages/About'
+
+//for practical 5;-
+// class index extends Component{
+  // constructor(props){
+  //   super(props)
+      
+
+  //   this.state={
+  //     isLoggedIn:true
+  //   }
+  //   }
+  //   change(){
+  //     let message
+  //     if(this.state.isLoggedIn){
+  //      message=<div><Counter/></div>
+  //     }
+  //     else{
+  //      message=<div><About/></div>
+  //     }
+  //   }
+
+//   render(){
+//     <button>click me</button>
+//   return(
+//     <div>
+      
+//       <button onClick={()=><Counter/>}>Click me</button>
+//     </div>
+      
+//     )
+//   }
+
+
+
+// }
+
+var change=()=>{
+  return <About/>
+
+
+}
+
+
+
+
+
+// for practical 1-4
+ReactDOM.render(
+  
+  <div className='v1'>
+    <Home/>
+    <button onClick={change}>change</button>
+    
+    
+    {/* <h1>hello sir</h1> */}
+  </div>,
+  document.getElementById('root')
+)
